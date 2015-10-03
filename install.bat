@@ -6,12 +6,11 @@ COLOR 0A
 SET "_drive=%~d0"
 SET "_parent=%~dp0"
 SET "_parent=%_parent:~0,-1%"
-setlocal
 SET "PATH=%PATH%;%_parent%"
 SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 PUSHD "%_parent%"
 
-CLS && ECHO.
+CLS & ECHO.
 
 REM install chocolatey
 WHERE /Q choco
